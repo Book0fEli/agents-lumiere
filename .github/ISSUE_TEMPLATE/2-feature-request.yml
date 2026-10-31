@@ -1,0 +1,26 @@
+name: Feature request
+description: An idea for an agent, a setting, or something that would save you time
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Tell us the problem first: what slips through the cracks today, and how you handle it now.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem?
+      placeholder: "Example: customers who pay part of an invoice keep getting the full reminder."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: input
+    id: business
+    attributes:
+      label: What kind of business is this for? (optional)
+      placeholder: "Plumbing, cleaning, property management..."

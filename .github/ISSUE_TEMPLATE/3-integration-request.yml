@@ -1,0 +1,34 @@
+name: Integration request
+description: Ask for Lumière Agents to work with a tool you use
+labels: ["integration"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Which tool?
+      placeholder: "ServiceTitan, Xero, Google Calendar..."
+    validations:
+      required: true
+  - type: dropdown
+    id: agents
+    attributes:
+      label: Which agents would use it?
+      multiple: true
+      options:
+        - Invoice chaser
+        - Quote follow-up
+        - Missed-call text-back
+        - Paperwork chaser
+        - Receipt chaser
+        - Review requests
+  - type: textarea
+    id: what
+    attributes:
+      label: What should come in from it, or go out to it?
+      placeholder: "Open invoices and customer emails, read only."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        In the meantime, many tools can already connect through [Zapier or Make](https://github.com/Book0fEli/agents-lumiere/blob/main/docs/zapier-and-make.md), a Google Sheet, or a CSV export.

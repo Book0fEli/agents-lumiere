@@ -1,0 +1,62 @@
+name: Bug report
+description: Something in the app, an agent, an integration, the API or a webhook isn't working
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Never paste API keys, webhook secrets, invoices, or your customers' names, emails or phone numbers. For anything about your account, email hello@lumierepaycheck.org instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - Invoice chaser
+        - Quote follow-up
+        - Missed-call text-back
+        - Paperwork chaser
+        - Receipt chaser
+        - Review requests
+        - Approving or editing emails
+        - Phone app
+        - An integration (QuickBooks, Jobber, Sheets...)
+        - Sending from Gmail, Outlook or SMTP
+        - API or webhooks
+        - Website pages or sign-in
+        - Example code in this repo
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+  - type: input
+    id: when
+    attributes:
+      label: When did it happen? (date, time and time zone)
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Computer
+        - Phone (browser)
+        - Phone (installed app)
+        - Not applicable (API or webhook)

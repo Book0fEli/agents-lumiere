@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help with your account, billing or setup (private)
+    url: https://agents.lumierepaycheck.org/docs/support-and-status
+    about: Email hello@lumierepaycheck.org. GitHub issues are public, so please don't post customer details, invoices or keys here.
+  - name: Report a security vulnerability
+    url: https://github.com/Book0fEli/agents-lumiere/security/advisories/new
+    about: Please report security issues privately here, not in a public issue.
+  - name: Enterprise (3+ locations or a larger team)
+    url: https://agents.lumierepaycheck.org/enterprise
+    about: Tell us about your company privately.
+  - name: Guides
+    url: https://agents.lumierepaycheck.org/docs
+    about: How each agent works, setup, integrations, billing and more.
+  - name: Live status
+    url: https://agents.lumierepaycheck.org/status
+    about: Check whether something is down before reporting it.
